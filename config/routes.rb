@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/Admin' => 'user#admin_login'
 
-  get '/Logout' => 'user#/logout'
+  get '/Logout' => 'user#logout'
 
   get '/cart' => 'cart#index'
 

@@ -13,6 +13,12 @@ Rails.application.routes.draw do
 
   get '/Logout' => 'user#/logout'
 
+  get '/cart' => 'cart#index'
+
+  get '/cart/clear' => 'cart#clearCart'
+
+  get 'cart/:id' => 'cart#add'
+
   resources :items
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
